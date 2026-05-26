@@ -1,0 +1,19 @@
+{
+  "algorithm": "dqn",
+  "episodes": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+  ],
+  "average_reward": 100.0,
+  "std_reward": 0.0,
+  "model_path": "models/mohi_boxer_best.h5",
+  "checkpoint_path": null
+}

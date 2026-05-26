@@ -1,0 +1,12 @@
+numpy<3
+gymnasium
+ale-py
+envpool
+jax
+jaxlib
+flax
+optax
+tensorboardX
+opencv-python
+moviepy
+huggingface_hub

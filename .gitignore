@@ -1,0 +1,49 @@
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local pulls, backups, and generated transfer bundles
+.remote_pull/
+_remote_submission_bundle.tgz
+_remote_submission_eval.tgz
+archive/
+*.zip
+
+# Internal Codex / agent working notes. Not for teacher-facing repo.
+AGENT.md
+presentation/SPRECHERHILFE.md
+presentation/LERN_DOKUMENT.md
+docs/research/
+
+# Original assignment PDF is useful locally, but not necessary in the final repo.
+docs/ABGABE.pdf
+
+# Internal server/training metadata. Keep only clean summaries, curve, eval and video.
+artifacts/training/final_run_state.json
+artifacts/training/remote_model_metadata.json
+artifacts/training/teacher_dataset_manifest.json
+
+# Server maintenance scripts, not needed for teacher execution.
+scripts/
+
+# Training data/logs can become huge. Keep curated artifacts only.
+logs/
+artifacts/teacher_boxing_dataset*/
+artifacts/**/teacher_shard_*.npz
+artifacts/**/events.jsonl
+artifacts/**/live_gpu.log
+
+# Keep final models and curated teacher-facing artifacts
+!models/mohi_boxer_best.h5
+!models/mohi_boxer_best.keras
+!artifacts/evaluation/**
+!artifacts/training/best_10_game_evaluation.json
+!artifacts/training/model_summary.txt
+!artifacts/training/student_loss_accuracy_latest_round.png
+!artifacts/training/training_overview.json
+!artifacts/training/training_reward_curve.csv
+!artifacts/training/training_reward_curve.png

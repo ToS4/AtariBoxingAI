@@ -1,0 +1,16 @@
+MohiBoxer - Zusammenfassung des finalen Keras-Modells
+
+Input Shape: (None, 4, 84, 84)
+Output Shape: (None, 18)
+Trainierbare Parameter: 1,093,858
+
+Architektur:
+- Input: 4 gestapelte 84x84 Graustufenbilder aus Atari Boxing, uint8
+- Umordnung in channels-last Format und Skalierung der Pixel auf [0, 1]
+- Drei IMPALA-aehnliche Convolution-Sequenzen mit 16, 32 und 32 Channels
+- Jede Sequenz: Conv2D, MaxPool2D und zwei Residual Blocks
+- Dense Layer: 256 ReLU-Neuronen
+- Output Layer: 18 Logits, ein Wert pro Atari-Boxing-Aktion
+
+Trainingsziel:
+Sparse Categorical Crossentropy auf Teacher-Aktionslabels. Beim Spielen wird argmax(logits) als Aktion verwendet.

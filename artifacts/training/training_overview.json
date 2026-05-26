@@ -1,0 +1,51 @@
+{
+  "final_handin_model_h5": "models/mohi_boxer_best.h5",
+  "final_handin_model_keras": "models/mohi_boxer_best.keras",
+  "required_5_game_evaluation": {
+    "algorithm": "dqn",
+    "episodes": [
+      98.0,
+      100.0,
+      100.0,
+      100.0,
+      98.0
+    ],
+    "average_reward": 99.2,
+    "std_reward": 0.9797958971132712,
+    "model_path": "models/mohi_boxer_best.h5",
+    "checkpoint_path": null
+  },
+  "best_10_game_selection_evaluation": {
+    "algorithm": "dqn",
+    "episodes": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "average_reward": 100.0,
+    "std_reward": 0.0,
+    "model_path": "models/mohi_boxer_best.h5",
+    "checkpoint_path": null
+  },
+  "best_evaluation_round_from_curve": {
+    "round": 198,
+    "average_reward": 100.0,
+    "std_reward": 0.0,
+    "min_reward": 100.0,
+    "max_reward": 100.0,
+    "episode_rewards": "100 100 100 100 100 100 100 100 100 100"
+  },
+  "num_selection_evaluations": 334,
+  "teacher_dataset_episodes": 20202,
+  "teacher_dataset_samples": 8966962,
+  "teacher_dataset_average_reward": 95.6979011979012,
+  "last_completed_round": 337,
+  "last_eval_reward": 91.7
+}
